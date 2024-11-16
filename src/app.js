@@ -9,12 +9,8 @@ const app = express();
 
 //------ init middlewares ------
 app.use(morgan('dev'));
-/*
-  morgan('combined');
-  morgan('common');
-  morgan('short');
-  morgan('tiny');
-*/
+
+
 app.use(helmet()); // miss head curl
 app.use(compression());  // decrease data x100 request
 app.use(express.json());
